@@ -38,7 +38,8 @@ const Authenticate = (props) => {
           ...formState.inputs,
           name: undefined,
         },
-        formState.inputs.email.isValid && formState.inputs.password.isValid
+        formState.inputs.userEmail.isValid &&
+          formState.inputs.userPassword.isValid
       );
     } else {
       setFormData(
